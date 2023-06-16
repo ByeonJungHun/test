@@ -23,7 +23,7 @@ while IFS= read -r image_name; do
     docker tag ${nexus}/cmoa/${image_name}:${version} ${nexus}/cmoa3/${image_name}:${version}
 
     echo -e "\n\n\033[93${image_name}:${version} push!\n\n\033[0m"
-    #docker push ${nexus}/cmoa3/${image_name}:${version}
+    docker push ${nexus}/cmoa3/${image_name}:${version}
 
 done <"${images_list}"
 
