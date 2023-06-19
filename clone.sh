@@ -2,7 +2,6 @@
 
 export USER="ByeonJungHun"
 #export GITKEY="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"
-export GITKEY=""
 export REPO=$1
 
 echo ${REPO/\/\//\/\/$USER:$GITKEY@}
